@@ -39,6 +39,7 @@ header{
 /* Nav */
 
 nav{
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -104,11 +105,31 @@ nav{
   }
 
   .menu ul{
+    text-wrap: nowrap;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     margin-left: -50px;
   }
-  
+  .center:nth-child(5)
+  {
+    position: relative;
+    top: -120px;
+    left: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+  }
+  .center:nth-child(6)
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+    top: -115px;
+    left: 120px;
+  }
 }
 
 /* Tab */
