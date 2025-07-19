@@ -47,6 +47,7 @@ nav{
   font-size: 1.5rem;
   margin-top: -8px;
   color: #3A3A3A;
+  text-wrap: nowrap;
 }
 .menu ul{
   display: flex;
@@ -111,3 +112,10 @@ nav{
 }
 
 /* Tab */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+  header{
+    margin: 20px 50px 0px 50px;
+  }
+}
