@@ -42,6 +42,7 @@ nav{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .brand{
   font-weight: bold;
@@ -49,6 +50,10 @@ nav{
   margin-top: -8px;
   color: #3A3A3A;
   text-wrap: nowrap;
+}
+.menu{
+  padding: 0;
+  margin-top: -18px;
 }
 .menu ul{
   display: flex;
@@ -64,6 +69,38 @@ nav{
   font-weight: 550;
   color: #3A3A3A;
   text-decoration: none;
+}
+
+/* Bannner */
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+}
+.banner-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner-detail h1{
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #3A3A3A;
+  margin-bottom: 0;
+}
+.banner-detail p{
+  font-weight: bold;
+  color: #3A3A3A;
+}
+.banner-detail button{
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 40px;
+  height: 45px;
+  width: 195px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
 
 
@@ -113,7 +150,7 @@ nav{
   .center:nth-child(5)
   {
     position: relative;
-    top: -120px;
+    top: -100px;
     left: -120px;
     display: flex;
     justify-content: center;
@@ -127,7 +164,7 @@ nav{
     justify-content: center;
     align-items: center;
     grid-column: 3;
-    top: -115px;
+    top: -100px;
     left: 120px;
   }
 }
@@ -138,5 +175,19 @@ nav{
 
   header{
     margin: 20px 50px 0px 50px;
+  }
+  .brand{
+    margin-top: 15px;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+  }
+
+  .banner-detail h1{
+    font-size: 2rem;
+    white-space: nowrap;
   }
 }
